@@ -2,7 +2,44 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+
+/* --- ESTILOS DEL HERO --- */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* --- ESTILOS VERDES PARA BOOTSTRAP --- */
+[data-bs-theme="dark"] .form-control:focus {
+  border-color: #1DB954;
+  box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.5);
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #1DB954;
+}
+
+[data-bs-theme="dark"] .accordion-button:focus {
+  border-color: rgba(29, 185, 84, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.5);
+}
+
+[data-bs-theme="dark"] .accordion-button::after,
+[data-bs-theme="dark"] .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .logo {
